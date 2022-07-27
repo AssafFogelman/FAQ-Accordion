@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="./JS/script.js" defer></script>
+    <title>Firas and Assaf's FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+    </style>
+  </head>
+  <body>
+    <div class="container" id="containerId">
+      <div class="wrapper">
+        <div class="left">
+          <img id="box" src="./images/illustration-box-desktop.svg" />
+          <div id="transparent-overflow-hidden-element">
+            <div id="div-for-margin">
+              <img id="leftbackground" src="./images/bg-pattern-desktop.svg" alt="">
+              <img id="woman" src="./images/illustration-woman-online-desktop.svg" alt="" />
+            </div>
+        </div>
+        <div class="small-screen-images">
+          <img src="./images/bg-pattern-mobile.svg" alt="" id="shadow-mobile">
+          <img src="./images/illustration-woman-online-mobile.svg" alt="" id="woman-mobile">
+        </div>
+      </div>
+        <div class="right">
+          <h1>faq</h1>
+          
+          <div id="div1" onclick="openAndClose(1)">
+            <p class="headline" id="headline1">How many team members can I invite?</p>
+            <p>
+              You can invite up to 2 additional
+              users on the Free plan. There is no limit on team members for the
+              Premium plan.
+            </p>
+          </div>
+          
+          <hr>
+          <div id="div2" onclick="openAndClose(2)">
+            
+            <p  class="headline" id="headline2">What is the maximum file upload size?</p>
+            <p>
+              No more than 2GB.
+              All files in your account must fit your allotted storage space.
+            </p>
+            
+          </div>
+          <hr>
+          <div id="div3" onclick="openAndClose(3)">
+            <p  class="headline" id="headline3">How do I reset my password?</p>
+            <p>
+              Click “Forgot password” from the login page or
+              “Change password” from your profile page. A reset link will be emailed
+              to you.
+            </p>
+          </div> 
+          <hr>
+          <div id="div4" onclick="openAndClose(4)">
+            <p  class="headline" id="headline4">Can I cancel my subscription?</p>
+            <p>
+              Yes! Send us a message and we’ll
+              process your request no questions asked. 
+              </p>
+            </div>
+            <hr>
+            <div id="div5" onclick="openAndClose(5)">
+              <p  class="headline" id="headline5">
+                Do you provide additional
+                support?
+              </p>
+              <p> 
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
