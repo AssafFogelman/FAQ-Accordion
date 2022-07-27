@@ -1,0 +1,146 @@
+* {
+  font-family: $primary-font;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  font-size: 12px;
+  background-image: linear-gradient($SoftViolet, $SoftBlue);
+  color: $VeryDarkDesaturatedBlue;
+}
+
+.container {
+  min-height: 100vh;
+  margin: auto;
+  max-width: 1440px;
+
+  @extend %flex;
+  .wrapper {
+    width: calc(
+      0.8 * 1440px
+    ); // wrapper is 80% of container but it doesn't shrink when container does.
+    height: 500px;
+    background-color: white;
+    border-radius: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .left {
+      display: flex;
+
+      width: 100%;
+      position: relative;
+      .small-screen-images {
+        display: none;
+      }
+    }
+    #box {
+      display: flex;
+      position: absolute;
+      z-index: 150;
+      left: 0;
+      top: 50%;
+      transform: translate(-49%, -50%);
+    }
+
+    #transparent-overflow-hidden-element {
+      display: flex;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+
+    #div-for-margin {
+      display: flex;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin-bottom: 28%;
+      margin-right: 32%;
+    }
+
+    #leftbackground {
+      position: absolute;
+      left: 100%;
+      top: 200%;
+      transform: translate(-100%, -100%);
+    }
+    #woman {
+      position: absolute;
+      top: 110%;
+      left: 100%;
+      transform: translate(-100%, -100%);
+    }
+  }
+  .right {
+    padding: 3em 5em;
+    width: 100%;
+    @extend %flex;
+    flex-direction: column;
+    gap: 1.3em;
+    h1 {
+      font-size: 3em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    div {
+      width: 100%;
+      cursor: pointer;
+      :first-child {
+        font-size: 1.5em;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        &:after {
+          transition: transform 0.1s ease-in-out;
+          content: url(../images/icon-arrow-down.svg);
+        }
+      }
+      :last-child {
+        font-size: 1.5em;
+        font-weight: 400;
+        display: none;
+      }
+    }
+  }
+}
+
+hr {
+  width: 100%;
+  border: 1px solid $LightGrayishBlue;
+  margin: 3px 0px 3px 0px;
+}
+
+.headline:hover {
+  color: $SoftRed;
+}
+
+#headline1::after {
+  transform: rotate(0deg);
+}
+
+#headline2::after {
+  transform: rotate(0deg);
+}
+
+#headline3::after {
+  transform: rotate(0deg);
+}
+
+#headline4::after {
+  transform: rotate(0deg);
+}
+
+#headline5::after {
+  transform: rotate(0deg);
+}

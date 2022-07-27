@@ -1,0 +1,234 @@
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container .right, .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  color: hsl(238deg, 29%, 16%);
+}
+
+.container {
+  min-height: 100vh;
+  margin: auto;
+  max-width: 1440px;
+}
+.container .wrapper {
+  width: 1152px;
+  height: 500px;
+  background-color: white;
+  border-radius: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container .wrapper .left {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.container .wrapper .left .small-screen-images {
+  display: none;
+}
+.container .wrapper #box {
+  display: flex;
+  position: absolute;
+  z-index: 150;
+  left: 0;
+  top: 50%;
+  transform: translate(-49%, -50%);
+}
+.container .wrapper #transparent-overflow-hidden-element {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.container .wrapper #div-for-margin {
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-bottom: 28%;
+  margin-right: 32%;
+}
+.container .wrapper #leftbackground {
+  position: absolute;
+  left: 100%;
+  top: 200%;
+  transform: translate(-100%, -100%);
+}
+.container .wrapper #woman {
+  position: absolute;
+  top: 110%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+}
+.container .right {
+  padding: 3em 5em;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.3em;
+}
+.container .right h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.container .right div {
+  width: 100%;
+  cursor: pointer;
+}
+.container .right div :first-child {
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.container .right div :first-child:after {
+  transition: transform 0.1s ease-in-out;
+  content: url(../images/icon-arrow-down.svg);
+}
+.container .right div :last-child {
+  font-size: 1.5em;
+  font-weight: 400;
+  display: none;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid hsl(240deg, 5%, 91%);
+  margin: 3px 0px 3px 0px;
+}
+
+.headline:hover {
+  color: hsl(14deg, 88%, 65%);
+}
+
+#headline1::after {
+  transform: rotate(0deg);
+}
+
+#headline2::after {
+  transform: rotate(0deg);
+}
+
+#headline3::after {
+  transform: rotate(0deg);
+}
+
+#headline4::after {
+  transform: rotate(0deg);
+}
+
+#headline5::after {
+  transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1248px) {
+  .container, .container .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    margin: 10% 1% 10%;
+    flex-direction: column;
+  }
+  .container .wrapper {
+    width: auto;
+    min-width: 400px;
+    height: 90%;
+    background-color: white;
+    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .wrapper .left {
+    display: flex;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    width: 100%;
+    height: 200px;
+  }
+  .container .wrapper .left .small-screen-images {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+  }
+  .container .wrapper .left .small-screen-images img {
+    position: absolute;
+    width: 329.6px;
+    transform: translate(0, -50%);
+  }
+  .container .wrapper .left .small-screen-images #shadow-mobile {
+    top: 76px;
+  }
+  .container .wrapper .left .small-screen-images #woman-mobile {
+    top: -24px;
+  }
+  .container .wrapper #box {
+    display: none;
+  }
+  .container .wrapper #transparent-overflow-hidden-element {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  .container .wrapper #div-for-margin {
+    display: none;
+  }
+  .container .wrapper #leftbackground {
+    position: none;
+  }
+  .container .wrapper #woman {
+    position: none;
+  }
+  .container .right {
+    padding: 3em 5em;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.3em;
+  }
+  .container .right h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+  .container .right div {
+    width: 100%;
+  }
+  .container .right div :first-child {
+    font-size: 1.5em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .right div :first-child:after {
+    content: url(../images/icon-arrow-down.svg);
+  }
+  .container .right div :last-child {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=main.css.map */
